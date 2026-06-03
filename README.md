@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarte Correto de Embalagens de Defensivos Agrícolas</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #388e3c;
+            --accent-color: #d32f2f;
+            --bg-color: #f4f6f4;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .passos {
+            list-style: none;
+        }
+
+        .passos li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .passos li::before {
+            content: attr(data-step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--secondary-color);
+            color: white;
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 1.8rem;
+            font-weight: bold;
+        }
+
+        .alerta {
+            background-color: #ffebee;
+            border-left: 5px solid var(--accent-color);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .alerta h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Logística Reversa no Campo</h1>
+        <p>Guia Prático para o Descarte de Embalagens de Defensivos Agrícolas</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Por que o descarte correto é obrigatório?</h2>
+            <p>O descarte inadequado de embalagens de agroquímicos (venenos/defensivos) traz graves riscos de contaminação do solo, dos recursos hídricos e da saúde humana. No Brasil, a Lei nº 9.974/00 determina a responsabilidade compartilhada entre agricultores, canais de venda e indústrias para o retorno desses materiais.</p>
+        </section>
+
+        <section class="card">
+            <h2>O Passo a Passo no Campo</h2>
+            <ul class="passos">
+                <li data-step="1">
+                    <strong>Tríplice Lavagem ou Lavagem sob Pressão:</strong>
+                    Imediatamente após esvaziar a embalagem rígida, lave-a três vezes (adicionando água até 1/4, agitando bem e despejando a água de lavagem dentro do tanque do pulverizador). Se o maquinário tiver a função de lavagem sob pressão, utilize-a por 30 segundos.
+                </li>
+                <li data-step="2">
+                    <strong>Inutilização do Frasco:</strong>
+                    Após a lavagem, perfure o fundo da embalagem plástica ou metálica para evitar que ela seja reaproveitada. <em>Nunca danifique o rótulo ou o código de barras.</em>
+                </li>
+                <li data-step="3">
+                    <strong>Armazenamento Temporário:</strong>
+                    Guarde as embalagens lavadas e suas respectivas tampas (separadas) em um depósito nas propriedades rurais. Esse local deve ser fechado, ventilado e seguro, longe de animais e alimentos.
+                </li>
+                <li data-step="4">
+                    <strong>Devolução:</strong>
+                    O agricultor tem o prazo de até 1 ano (a contar da data da compra) para devolver as embalagens na unidade de recebimento (posto ou central) indicada na nota fiscal de compra.
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Tipos de Embalagens</h2>
+            <p><strong>Embalagens Laváveis:</strong> São as rígidas (plásticas ou metálicas) que contêm produtos que usam água no preparo da calda. Devem passar obrigatoriamente pelo processo de lavagem.</p>
+            <br>
+            <p><strong>Embalagens Não Laváveis:</strong> São sacos plásticos, papelão e outras embalagens flexíveis que devem ser devolvidas sem qualquer processo de limpeza, apenas vazias.</p>
+        </section>
+
+        <section class="card">
+            <h2>Centros de Recebimento</h2>
+            <p>Procure pelo centro de recebimento mais próximo de sua propriedade. Geralmente estão localizados em:</p>
+            <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                <li>Lojas de insumos agrícolas</li>
+                <li>Postos de recolhimento</li>
+                <li>Cooperativas agrícolas</li>
+                <li>Distribuidoras de defensivos</li>
+            </ul>
+            <div class="alerta">
+                <h4>⚠️ Importante</h4>
+                <p>Verifique a localização na nota fiscal de compra ou consulte o fabricante do produto.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Consequências do Descarte Incorreto</h2>
+            <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                <li><strong>Contaminação de aquíferos</strong> e recursos hídricos</li>
+                <li><strong>Danos à fauna e flora</strong> local</li>
+                <li><strong>Problemas de saúde</strong> em pessoas e animais</li>
+                <li><strong>Penalidades legais</strong> ao produtor</li>
+                <li><strong>Impacto ambiental</strong> de longo prazo</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Agrinho | Descarte Correto de Embalagens de Defensivos Agrícolas</p>
+        <p>Lei nº 9.974/00 - Responsabilidade Compartilhada</p>
+    </footer>
+
+</body>
+</html>
