@@ -1,0 +1,484 @@
+/* ===========================
+   VARIÁVEIS E RESET
+   =========================== */
+
+:root {
+    --primary-color: #2e7d32;
+    --secondary-color: #388e3c;
+    --accent-color: #d32f2f;
+    --warning-color: #f57c00;
+    --bg-color: #f4f6f4;
+    --text-color: #333;
+    --border-color: #ddd;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===========================
+   CONTAINER
+   =========================== */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: var(--shadow);
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+
+.navbar {
+    background-color: white;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.nav-links li {
+    flex: 1;
+    min-width: 150px;
+}
+
+.nav-links a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    background-color: rgba(46, 125, 50, 0.05);
+}
+
+/* ===========================
+   MAIN
+   =========================== */
+
+main {
+    padding: 3rem 0;
+    min-height: calc(100vh - 300px);
+}
+
+/* ===========================
+   CARD
+   =========================== */
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--bg-color);
+    padding-bottom: 0.75rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.card ul {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card li {
+    margin-bottom: 0.8rem;
+}
+
+/* ===========================
+   PASSOS
+   =========================== */
+
+.passos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.passos li {
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+.passos li::before {
+    content: attr(data-step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.passos li strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.passos li p {
+    margin: 0;
+    color: #555;
+}
+
+/* ===========================
+   EMBALAGENS GRID
+   =========================== */
+
+.embalagens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.embalagem-item {
+    background: linear-gradient(135deg, #f5f5f5 0%, white 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.embalagem-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.embalagem-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.embalagem-item p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ===========================
+   ALERTA
+   =========================== */
+
+.alerta {
+    background-color: #fff3e0;
+    border-left: 5px solid var(--warning-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.alerta h4 {
+    color: var(--warning-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.alerta p {
+    color: #e65100;
+    margin: 0;
+}
+
+/* ===========================
+   CONSEQUÊNCIAS GRID
+   =========================== */
+
+.consequencias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.consequencia-item {
+    background: white;
+    border: 2px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.consequencia-item:hover {
+    border-color: var(--accent-color);
+    background-color: #ffebee;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.consequencia-item .icon {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.consequencia-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.consequencia-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-top: 4rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer strong {
+    color: var(--secondary-color);
+}
+
+/* ===========================
+   RESPONSIVIDADE
+   =========================== */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links li {
+        min-width: 120px;
+    }
+
+    .nav-links a {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+
+    .passos li {
+        padding-left: 3rem;
+    }
+
+    .passos li::before {
+        width: 2.2rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        font-size: 1rem;
+    }
+
+    .embalagens-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consequencias-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header .logo {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        flex: none;
+        min-width: auto;
+    }
+
+    .nav-links a {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .passos li {
+        padding-left: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .passos li::before {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .consequencia-item .icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .consequencia-item h3 {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1.5rem 0;
+    }
+}
+
+/* ===========================
+   ANIMAÇÕES
+   =========================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }

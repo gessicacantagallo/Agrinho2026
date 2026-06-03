@@ -1,190 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarte Correto de Embalagens de Defensivos Agrícolas</title>
-    <style>
-        :root {
-            --primary-color: #2e7d32;
-            --secondary-color: #388e3c;
-            --accent-color: #d32f2f;
-            --bg-color: #f4f6f4;
-            --text-color: #333;
-        }
+# 🌾 Agrinho 2026
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+**Logística Reversa no Campo** - Guia Prático para o Descarte de Embalagens de Defensivos Agrícolas
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
+## 📋 Sobre o Projeto
 
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+Este site educativo foi desenvolvido para orientar agricultores sobre o descarte correto de embalagens de defensivos agrícolas, em conformidade com a **Lei nº 9.974/00** de responsabilidade compartilhada.
 
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
+## 📁 Estrutura do Projeto
 
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
+```
+Agrinho2026/
+├── index.html      # Página principal com estrutura HTML
+├── styles.css      # Estilos e layout responsivo
+├── script.js       # Funcionalidades interativas
+└── README.md       # Este arquivo
+```
 
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
+## 🚀 Como Utilizar
 
-        .card {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
-        }
+### Localmente
+1. Clone ou baixe este repositório
+2. Abra `index.html` em seu navegador
+3. Navegue pelas seções usando o menu superior
 
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--bg-color);
-            padding-bottom: 0.5rem;
-        }
+### Online
+- Acesse o site através do GitHub Pages (quando habilitado)
 
-        .passos {
-            list-style: none;
-        }
+## 📑 Seções do Site
 
-        .passos li {
-            position: relative;
-            padding-left: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
+1. **Por que é importante?** - Legislação e obrigatoriedade
+2. **Passo a Passo** - Processo de descarte correto (4 passos)
+3. **Tipos de Embalagens** - Laváveis vs Não Laváveis
+4. **Centros de Recebimento** - Onde descartar
+5. **Consequências** - Riscos do descarte inadequado
 
-        .passos li::before {
-            content: attr(data-step);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: var(--secondary-color);
-            color: white;
-            width: 1.8rem;
-            height: 1.8rem;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 1.8rem;
-            font-weight: bold;
-        }
+## 🎨 Características
 
-        .alerta {
-            background-color: #ffebee;
-            border-left: 5px solid var(--accent-color);
-            padding: 1rem;
-            border-radius: 4px;
-            margin-top: 1rem;
-        }
+✅ Design responsivo (mobile, tablet, desktop)  
+✅ Navegação suave com scroll automático  
+✅ Animações elegantes  
+✅ Interface intuitiva e acessível  
+✅ Código bem estruturado e comentado  
+✅ Otimizado para performance  
+✅ Arquivos separados (HTML, CSS, JS)  
+✅ Navbar sticky com indicador de seção ativa  
 
-        .alerta h4 {
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-        }
+## 🔧 Tecnologias Utilizadas
 
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #333;
-            color: white;
-            margin-top: 4rem;
-        }
-    </style>
-</head>
-<body>
+- **HTML5** - Estrutura semântica
+- **CSS3** - Estilos modernos e responsivos
+- **JavaScript Vanilla** - Interatividade sem dependências
+- **Gradientes CSS** - Design visual atrativo
+- **Grid Layout** - Organização responsiva
 
-    <header>
-        <h1>Logística Reversa no Campo</h1>
-        <p>Guia Prático para o Descarte de Embalagens de Defensivos Agrícolas</p>
-    </header>
+## 📱 Responsividade
 
-    <main>
-        <section class="card">
-            <h2>Por que o descarte correto é obrigatório?</h2>
-            <p>O descarte inadequado de embalagens de agroquímicos (venenos/defensivos) traz graves riscos de contaminação do solo, dos recursos hídricos e da saúde humana. No Brasil, a Lei nº 9.974/00 determina a responsabilidade compartilhada entre agricultores, canais de venda e indústrias para o retorno desses materiais.</p>
-        </section>
+O site se adapta perfeitamente a:
+- 📱 Smartphones (até 480px)
+- 📲 Tablets (481px a 768px)
+- 💻 Desktops (acima de 768px)
 
-        <section class="card">
-            <h2>O Passo a Passo no Campo</h2>
-            <ul class="passos">
-                <li data-step="1">
-                    <strong>Tríplice Lavagem ou Lavagem sob Pressão:</strong>
-                    Imediatamente após esvaziar a embalagem rígida, lave-a três vezes (adicionando água até 1/4, agitando bem e despejando a água de lavagem dentro do tanque do pulverizador). Se o maquinário tiver a função de lavagem sob pressão, utilize-a por 30 segundos.
-                </li>
-                <li data-step="2">
-                    <strong>Inutilização do Frasco:</strong>
-                    Após a lavagem, perfure o fundo da embalagem plástica ou metálica para evitar que ela seja reaproveitada. <em>Nunca danifique o rótulo ou o código de barras.</em>
-                </li>
-                <li data-step="3">
-                    <strong>Armazenamento Temporário:</strong>
-                    Guarde as embalagens lavadas e suas respectivas tampas (separadas) em um depósito nas propriedades rurais. Esse local deve ser fechado, ventilado e seguro, longe de animais e alimentos.
-                </li>
-                <li data-step="4">
-                    <strong>Devolução:</strong>
-                    O agricultor tem o prazo de até 1 ano (a contar da data da compra) para devolver as embalagens na unidade de recebimento (posto ou central) indicada na nota fiscal de compra.
-                </li>
-            </ul>
-        </section>
+## 🌱 Conteúdo Principal
 
-        <section class="card">
-            <h2>Tipos de Embalagens</h2>
-            <p><strong>Embalagens Laváveis:</strong> São as rígidas (plásticas ou metálicas) que contêm produtos que usam água no preparo da calda. Devem passar obrigatoriamente pelo processo de lavagem.</p>
-            <br>
-            <p><strong>Embalagens Não Laváveis:</strong> São sacos plásticos, papelão e outras embalagens flexíveis que devem ser devolvidas sem qualquer processo de limpeza, apenas vazias.</p>
-        </section>
+### Passo a Passo - 4 Etapas
 
-        <section class="card">
-            <h2>Centros de Recebimento</h2>
-            <p>Procure pelo centro de recebimento mais próximo de sua propriedade. Geralmente estão localizados em:</p>
-            <ul style="margin-left: 1.5rem; margin-top: 1rem;">
-                <li>Lojas de insumos agrícolas</li>
-                <li>Postos de recolhimento</li>
-                <li>Cooperativas agrícolas</li>
-                <li>Distribuidoras de defensivos</li>
-            </ul>
-            <div class="alerta">
-                <h4>⚠️ Importante</h4>
-                <p>Verifique a localização na nota fiscal de compra ou consulte o fabricante do produto.</p>
-            </div>
-        </section>
+1. **Tríplice Lavagem** - Lavar a embalagem 3 vezes
+2. **Inutilização** - Furar o fundo da embalagem
+3. **Armazenamento** - Guardar em local seguro
+4. **Devolução** - Devolver em até 1 ano
 
-        <section class="card">
-            <h2>Consequências do Descarte Incorreto</h2>
-            <ul style="margin-left: 1.5rem; margin-top: 1rem;">
-                <li><strong>Contaminação de aquíferos</strong> e recursos hídricos</li>
-                <li><strong>Danos à fauna e flora</strong> local</li>
-                <li><strong>Problemas de saúde</strong> em pessoas e animais</li>
-                <li><strong>Penalidades legais</strong> ao produtor</li>
-                <li><strong>Impacto ambiental</strong> de longo prazo</li>
-            </ul>
-        </section>
-    </main>
+### Lei e Responsabilidade
 
-    <footer>
-        <p>&copy; 2026 - Agrinho | Descarte Correto de Embalagens de Defensivos Agrícolas</p>
-        <p>Lei nº 9.974/00 - Responsabilidade Compartilhada</p>
-    </footer>
+- **Lei nº 9.974/00** - Responsabilidade Compartilhada
+- O produtor deve seguir o protocolo correto
+- Multas por descarte inadequado
 
-</body>
-</html>
+## 🎯 Públicos-Alvo
+
+- 👨‍🌾 Agricultores
+- 🏪 Proprietários de lojas de insumos
+- 🤝 Cooperativas agrícolas
+- 📚 Estudantes e educadores
+- 🌍 Conscientes ambientais
+
+## 💡 Melhorias Futuras
+
+- [ ] Adicionar mapa interativo de centros de recebimento
+- [ ] Integrar formulário de contato
+- [ ] Criar versão em múltiplos idiomas
+- [ ] Adicionar vídeos educativos
+- [ ] Implementar sistema de certificado digital
+- [ ] Criar app mobile
+- [ ] Sistema de localização GPS de centros
+
+## 📞 Contato e Suporte
+
+Para dúvidas sobre o descarte correto de defensivos:
+- Consulte a nota fiscal da compra
+- Procure o fabricante do produto
+- Visite um centro de recebimento autorizado
+
+## 📄 Licença
+
+Este projeto é de domínio público e pode ser utilizado livremente para fins educacionais.
+
+---
+
+**Desenvolvido com ❤️ para um agronegócio sustentável**
+
+🌾 Agrinho 2026
